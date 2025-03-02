@@ -135,6 +135,12 @@ export function App() {
             <footer className="col-start-2 col-end-12 md:col-end-12 border-t-2 mt-8">
                 <span className="text-sm">Copyright 2025 - WL construções - Developed by: Anderson Andrade</span>
             </footer>
+
+            <img
+                src="src/assets/icons/whatsapp.svg"
+                alt="whatsapp to contact"
+                className="fixed bottom-4 right-4 w-16 h-16 cursor-pointer"
+            />
         </div>
     )
 }
