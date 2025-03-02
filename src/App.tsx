@@ -1,6 +1,7 @@
 import {Button} from "./components/ui/button.tsx";
 import {ChartLine, DraftingCompass, Gem, Instagram} from "lucide-react";
 import {JSX} from "react";
+import {ImageContainer} from "./components/common/image-container.component.tsx";
 
 export function App() {
     return (
@@ -62,8 +63,13 @@ export function App() {
                 </div>
 
                 {/* images-presentation */}
-                <div>
-                    <span>images</span>
+                <div className={'col-span-9 md:col-span-full flex justify-center items-center h-full'}>
+                    <div className="grid justify-center grid-cols-2 gap-4">
+                        <ImageContainer path={'src/assets/images/mainpage_1.jpeg'}/>
+                        <ImageContainer path={'src/assets/images/mainpage_2.jpeg'}/>
+                        <ImageContainer path={'src/assets/images/mainpage_3.jpeg'}/>
+                        <ImageContainer path={'src/assets/images/mainpage_4.jpeg'}/>
+                    </div>
                 </div>
 
                 {/* why use this solution */}
@@ -82,20 +88,22 @@ export function App() {
                 </div>
 
                 {/* highlights */}
-                <div
-                    className="col-span-full flex flex-col md:flex-row items-center justify-center gap-4">
-                    <Highlight
-                        icon={<Gem size={62}/>}
-                        label="Expertise consolidada em obras de alto padrão."
-                    />
-                    <Highlight
-                        icon={<DraftingCompass size={62}/>}
-                        label="Estratégia eficiente para máxima otimização."
-                    />
-                    <Highlight
-                        icon={<ChartLine size={62}/>}
-                        label="Gestão eficiente para máxima economia de materiais."
-                    />
+                <div className={'col-span-9 md:col-span-full'}>
+                    <div
+                        className=" flex flex-col md:flex-row items-center justify-center gap-4">
+                        <Highlight
+                            icon={<Gem size={62}/>}
+                            label="Expertise consolidada em obras de alto padrão."
+                        />
+                        <Highlight
+                            icon={<DraftingCompass size={62}/>}
+                            label="Estratégia eficiente para máxima otimização."
+                        />
+                        <Highlight
+                            icon={<ChartLine size={62}/>}
+                            label="Gestão eficiente para máxima economia de materiais."
+                        />
+                    </div>
                 </div>
 
                 {/* Contact button */}
