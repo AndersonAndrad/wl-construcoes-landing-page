@@ -2,20 +2,22 @@ import {Button} from "./components/ui/button.tsx";
 import {ChartLine, DraftingCompass, Gem, Instagram} from "lucide-react";
 import {JSX} from "react";
 import {ImageContainer} from "./components/common/image-container.component.tsx";
+import {Services, ServiceUrl} from "./core/interfaces/services.interface.ts";
+import {useNavigate} from "react-router-dom";
 
 export function App() {
     return (
-        <div className="grid grid-cols-12 sm:grid-cols-8 md:grid-cols-12 lg:grid-cols-12">
+        <div className="grid grid-cols-12 sm:grid-cols-8 md:grid-cols-12 font-outfit">
             {/* header content */}
             <header
-                className="flex items-center justify-between col-start-2 col-end-12 sm:col-end-8 md:col-end-12 py-4 h-fit">
+                className="flex items-center justify-between col-start-2 lg:col-start-4 col-end-12 sm:col-end-8 md:col-end-12 lg:col-end-10 py-4 h-fit">
                 <span className="text-nowrap font-semibold">Wl construções</span>
                 <span className="hidden sm:block whitespace-nowrap font-semibold">Entre em contato conosco</span>
             </header>
 
             {/* page content */}
             <main
-                className="gap-10 col-start-2 col-end-12 sm:col-end-8 md:col-end-12 lg:col-end-12 grid grid-cols-8 md:grid-cols-12 lg:grid-cols-12">
+                className="gap-10 col-start-2 lg:col-start-4 col-end-12 sm:col-end-8 md:col-end-12 lg:col-end-10 grid grid-cols-8 md:grid-cols-12 lg:grid-cols-12">
                 {/* logo image */}
                 <div className="col-span-full flex justify-center">
                     <img src="src/assets/logo-wl-construction.svg" alt="logo-wl-construction"/>
@@ -50,15 +52,51 @@ export function App() {
 
                     {/* list-services */}
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <Service name="Impermeabilização" pathIcon="src/assets/icons/impermeabilizacao.svg"/>
-                        <Service name="Elétrica" pathIcon={'src/assets/icons/eletrica.svg'}/>
-                        <Service name="Telhados" pathIcon={'src/assets/icons/telhados.svg'}/>
-                        <Service name="Alvenaria" pathIcon={'src/assets/icons/alvenaria.svg'}/>
-                        <Service name="Revestimento" pathIcon={'src/assets/icons/revestimento.svg'}/>
-                        <Service name="Ferragens" pathIcon={'src/assets/icons/ferragens.svg'}/>
-                        <Service name="Epóxi" pathIcon={'src/assets/icons/epoxi.svg'}/>
-                        <Service name="Piscinas" pathIcon={'src/assets/icons/piscina.svg'}/>
-                        <Service name="Hidráulica" pathIcon={'src/assets/icons/hidraulica.svg'}/>
+                        <Service
+                            name="Impermeabilização"
+                            pathIcon="src/assets/icons/impermeabilizacao.svg"
+                            pageUrl={Services.impermeabilizacao}
+                        />
+                        <Service
+                            name="Elétrica"
+                            pathIcon={'src/assets/icons/eletrica.svg'}
+                            pageUrl={Services.eletrica}
+                        />
+                        <Service
+                            name="Telhados"
+                            pathIcon={'src/assets/icons/telhados.svg'}
+                            pageUrl={Services.telhados}
+                        />
+                        <Service
+                            name="Alvenaria"
+                            pathIcon={'src/assets/icons/alvenaria.svg'}
+                            pageUrl={Services.alvenaria}
+                        />
+                        <Service
+                            name="Revestimento"
+                            pathIcon={'src/assets/icons/revestimento.svg'}
+                            pageUrl={Services.revestimento}
+                        />
+                        <Service
+                            name="Ferragens"
+                            pathIcon={'src/assets/icons/ferragens.svg'}
+                            pageUrl={Services.ferragens}
+                        />
+                        <Service
+                            name="Epóxi"
+                            pathIcon={'src/assets/icons/epoxi.svg'}
+                            pageUrl={Services.epoxi}
+                        />
+                        <Service
+                            name="Piscinas"
+                            pathIcon={'src/assets/icons/piscina.svg'}
+                            pageUrl={Services.piscina}
+                        />
+                        <Service
+                            name="Hidráulica"
+                            pathIcon={'src/assets/icons/hidraulica.svg'}
+                            pageUrl={Services.hidraulica}
+                        />
                     </div>
                 </div>
 
@@ -140,7 +178,7 @@ export function App() {
                 </div>
             </main>
 
-            <footer className="col-start-2 col-end-12 md:col-end-12 border-t-2 mt-8">
+            <footer className="col-start-2 lg:col-start-4 col-end-12 md:col-end-12 lg:col-end-10 border-t-2 mt-8">
                 <span className="text-sm">Copyright 2025 - WL construções - Developed by: Anderson Andrade</span>
             </footer>
 
@@ -153,9 +191,28 @@ export function App() {
     )
 }
 
-function Service(props: { name: string, pathIcon?: string }) {
+function Service(props: { name: string, pathIcon?: string, pageUrl?: string }) {
+    const navigate = useNavigate()
+
+    const servicesUrls: ServiceUrl = {
+        [Services.impermeabilizacao]: '/impermeabilizacao',
+        [Services.telhados]: '/telhados',
+        [Services.revestimento]: '/revestimento',
+        [Services.epoxi]: '/epoxi',
+        [Services.hidraulica]: '/hidraulica',
+        [Services.eletrica]: '/eletrica',
+        [Services.alvenaria]: '/alvenaria',
+        [Services.ferragens]: '/ferragens',
+        [Services.piscina]: '/piscina',
+    }
+
+    const navigateToPage = (service: Services): void => {
+        navigate(servicesUrls[service]);
+    }
+
     return (
-        <div className="flex items-center gap-3 cursor-pointer hover:brightness-80">
+        <div className="flex items-center gap-3 cursor-pointer hover:brightness-80"
+             onClick={() => navigateToPage((props?.pageUrl) as any)}>
             <img
                 src={props?.pathIcon ?? ''}
                 alt={props.name}
