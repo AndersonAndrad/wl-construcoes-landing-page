@@ -59,10 +59,10 @@ export function EletricaPage() {
                     <li className={'flex flex-col gap-3'}>
                         <h3 className={'text-xl'}>Manutenção</h3>
                         <div className="grid justify-center grid-cols-2 gap-4">
-                            <ImageContainer path={'src/assets/images/eletric_01.jpeg'}/>
-                            <ImageContainer path={'src/assets/images/eletric_02.jpeg'}/>
-                            <ImageContainer path={'src/assets/images/eletric_03.jpeg'}/>
-                            <ImageContainer path={'src/assets/images/eletric_04.jpeg'}/>
+                            <ImageContainer path={'../public/assets/images/eletric_01.jpeg'}/>
+                            <ImageContainer path={'../public/assets/images/eletric_02.jpeg'}/>
+                            <ImageContainer path={'../public/assets/images/eletric_03.jpeg'}/>
+                            <ImageContainer path={'../public/assets/images/eletric_04.jpeg'}/>
                         </div>
                     </li>
                 </ul>
