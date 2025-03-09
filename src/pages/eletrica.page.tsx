@@ -1,6 +1,7 @@
 import {Button} from "../components/ui/button.tsx";
 import {ArrowLeft} from "lucide-react";
 import {useNavigate} from "react-router-dom";
+import {ImageContainer} from "../components/common/image-container.component.tsx";
 
 export function EletricaPage() {
     const navigate = useNavigate();
@@ -40,16 +41,24 @@ export function EletricaPage() {
 
                     <h1 className={'text-xl'}>Elétrica</h1>
 
-                    <h5 className={'text-md md:text-sm'}>Segurança e eficiência para sua instalação elétrica. Nossa
-                        equipe realiza projetos e manutenções elétricas, garantindo funcionalidade e proteção para sua
-                        casa ou empresa.</h5>
+                    <h5 className={'text-md md:text-sm'}>
+                        Segurança e eficiência para sua instalação elétrica. Nossa equipe realiza projetos e manutenções
+                        elétricas, garantindo funcionalidade e proteção para sua casa ou empresa..
+                    </h5>
                 </div>
 
-                <div className={'col-span-full flex flex-col items-center gap-4'}>
-                    <img src="src/assets/images/building.svg" alt=""/>
-                    <h3 className={'text-center'}>Desculpe pelo transtorno, ainda estamos construindo essa parte do
-                        site</h3>
-                </div>
+                <ul className={'col-span-9 md:col-span-full flex flex-col gap-16 justify-start md:justify-center items-center h-full'}>
+                    {/* primeira */}
+                    <li className={'flex flex-col gap-3'}>
+                        <h3 className={'text-xl'}>Manutenção</h3>
+                        <div className="grid justify-center grid-cols-2 gap-4">
+                            <ImageContainer path={'src/assets/images/eletric_01.jpeg'}/>
+                            <ImageContainer path={'src/assets/images/eletric_02.jpeg'}/>
+                            <ImageContainer path={'src/assets/images/eletric_03.jpeg'}/>
+                            <ImageContainer path={'src/assets/images/eletric_04.jpeg'}/>
+                        </div>
+                    </li>
+                </ul>
             </main>
 
             <footer className="col-start-2 lg:col-start-4 col-end-12 md:col-end-12 lg:col-end-10 border-t-2 mt-8">
