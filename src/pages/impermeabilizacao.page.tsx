@@ -6,7 +6,7 @@ import {Whatsapp} from "../components/common/whatsapp.tsx";
 import {redirectToWhatsapp} from "../core/services/whatsapp.service.ts";
 
 export function ImpermeabilizacaoPage() {
-    const whatsappMessage: string = 'Olá gostaria de fazer um orçamento de Impermeabilização';
+    const whatsappMessage: string = 'Olá, gostaria de fazer um orçamento de Impermeabilização';
 
     const navigate = useNavigate();
 

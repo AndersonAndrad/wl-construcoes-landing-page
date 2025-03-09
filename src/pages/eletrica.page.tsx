@@ -6,7 +6,7 @@ import {redirectToWhatsapp} from "../core/services/whatsapp.service.ts";
 import {Whatsapp} from "../components/common/whatsapp.tsx";
 
 export function EletricaPage() {
-    const whatsappMessage: string = 'Olá gostaria de fazer um orçamento de elétrica'
+    const whatsappMessage: string = 'Olá, gostaria de fazer um orçamento de elétrica'
 
     const navigate = useNavigate();
 
