@@ -2,8 +2,12 @@ import {ArrowLeft} from "lucide-react";
 import {ImageContainer} from "../components/common/image-container.component.tsx";
 import {Button} from "../components/ui/button.tsx";
 import {useNavigate} from "react-router-dom";
+import {Whatsapp} from "../components/common/whatsapp.tsx";
+import {redirectToWhatsapp} from "../core/services/whatsapp.service.ts";
 
 export function ImpermeabilizacaoPage() {
+    const whatsappMessage: string = 'Olá gostaria de fazer um orçamento de Impermeabilização';
+
     const navigate = useNavigate();
 
     const navigateToHome = () => {
@@ -17,7 +21,11 @@ export function ImpermeabilizacaoPage() {
             <header
                 className="flex items-center justify-between col-start-2 col-end-12 sm:col-end-8 md:col-end-12 lg:col-start-4 lg:col-end-10 py-4 h-fit">
                 <span className="text-nowrap font-semibold">Wl construções</span>
-                <span className="hidden sm:block whitespace-nowrap font-semibold">Entre em contato conosco</span>
+                <span
+                    className="hidden sm:block whitespace-nowrap font-semibold cursor-pointer"
+                    onClick={() => redirectToWhatsapp({message: whatsappMessage})}
+                >
+                    Entre em contato conosco</span>
                 <Button
                     className={'sm:hidden w-fit'}
                     variant={'link'}
@@ -107,11 +115,7 @@ export function ImpermeabilizacaoPage() {
                 <span className="text-sm">Copyright 2025 - WL construções - Developed by: Anderson Andrade</span>
             </footer>
 
-            <img
-                src="src/assets/icons/whatsapp.svg"
-                alt="whatsapp to contact"
-                className="fixed bottom-4 right-4 w-16 h-16 cursor-pointer"
-            />
+            <Whatsapp message={whatsappMessage}/>
         </div>
     )
 }

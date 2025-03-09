@@ -4,15 +4,28 @@ import {JSX} from "react";
 import {ImageContainer} from "./components/common/image-container.component.tsx";
 import {Services, ServiceUrl} from "./core/interfaces/services.interface.ts";
 import {useNavigate} from "react-router-dom";
+import {Whatsapp} from "./components/common/whatsapp.tsx";
+import {redirectToWhatsapp} from "./core/services/whatsapp.service.ts";
 
 export function App() {
+    const redirectToInstagram = (): void => {
+        const url: string = `https://www.instagram.com/wlconstrucoes_etelhados?igsh=b2V1end0NXhxbzl3`;
+
+        window.open(url, "_blank");
+    }
+
     return (
         <div className="grid grid-cols-12 sm:grid-cols-8 md:grid-cols-12 font-outfit">
             {/* header content */}
             <header
                 className="flex items-center justify-between col-start-2 lg:col-start-4 col-end-12 sm:col-end-8 md:col-end-12 lg:col-end-10 py-4 h-fit">
                 <span className="text-nowrap font-semibold">Wl construções</span>
-                <span className="hidden sm:block whitespace-nowrap font-semibold">Entre em contato conosco</span>
+                <span
+                    className="hidden sm:block whitespace-nowrap font-semibold cursor-pointer"
+                    onClick={() => {
+                        redirectToWhatsapp()
+                    }}
+                >Entre em contato conosco</span>
             </header>
 
             {/* page content */}
@@ -36,7 +49,11 @@ export function App() {
 
                 {/* Contact button */}
                 <div className="col-span-full flex justify-center">
-                    <Button>Entrar em contato</Button>
+                    <Button
+                        onClick={() => redirectToWhatsapp()}
+                    >
+                        Entrar em contato
+                    </Button>
                 </div>
 
                 {/* presentation text */}
@@ -111,7 +128,11 @@ export function App() {
 
                 {/* Contact button */}
                 <div className="col-span-full flex justify-center">
-                    <Button>Entrar em contato</Button>
+                    <Button
+                        onClick={() => redirectToWhatsapp()}
+                    >
+                        Entrar em contato
+                    </Button>
                 </div>
 
                 {/* about us */}
@@ -135,7 +156,10 @@ export function App() {
 
                     <div className="flex items-center gap-4">
                         {/* instagram */}
-                        <div className="flex items-center gap-2">
+                        <div
+                            className="flex items-center gap-2 cursor-pointer"
+                            onClick={redirectToInstagram}
+                        >
                             <Instagram/>
                             <span className="text-xl">Instagram</span>
                         </div>
@@ -147,11 +171,7 @@ export function App() {
                 <span className="text-sm">Copyright 2025 - WL construções - Developed by: Anderson Andrade</span>
             </footer>
 
-            <img
-                src="src/assets/icons/whatsapp.svg"
-                alt="whatsapp to contact"
-                className="fixed bottom-4 right-4 w-16 h-16 cursor-pointer"
-            />
+            <Whatsapp/>
         </div>
     )
 }
