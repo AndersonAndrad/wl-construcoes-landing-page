@@ -62,41 +62,6 @@ export function App() {
                             pathIcon={'src/assets/icons/eletrica.svg'}
                             pageUrl={Services.eletrica}
                         />
-                        <Service
-                            name="Telhados"
-                            pathIcon={'src/assets/icons/telhados.svg'}
-                            pageUrl={Services.telhados}
-                        />
-                        <Service
-                            name="Alvenaria"
-                            pathIcon={'src/assets/icons/alvenaria.svg'}
-                            pageUrl={Services.alvenaria}
-                        />
-                        <Service
-                            name="Revestimento"
-                            pathIcon={'src/assets/icons/revestimento.svg'}
-                            pageUrl={Services.revestimento}
-                        />
-                        <Service
-                            name="Ferragens"
-                            pathIcon={'src/assets/icons/ferragens.svg'}
-                            pageUrl={Services.ferragens}
-                        />
-                        <Service
-                            name="Epóxi"
-                            pathIcon={'src/assets/icons/epoxi.svg'}
-                            pageUrl={Services.epoxi}
-                        />
-                        <Service
-                            name="Piscinas"
-                            pathIcon={'src/assets/icons/piscina.svg'}
-                            pageUrl={Services.piscina}
-                        />
-                        <Service
-                            name="Hidráulica"
-                            pathIcon={'src/assets/icons/hidraulica.svg'}
-                            pageUrl={Services.hidraulica}
-                        />
                     </div>
                 </div>
 
