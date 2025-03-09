@@ -156,7 +156,7 @@ export function App() {
     )
 }
 
-function Service(props: { name: string, pathIcon?: string, pageUrl?: string }) {
+function Service(props: { name: string, pathIcon?: string, pageUrl: string }) {
     const navigate = useNavigate()
 
     const servicesUrls: ServiceUrl = {
@@ -177,7 +177,7 @@ function Service(props: { name: string, pathIcon?: string, pageUrl?: string }) {
 
     return (
         <div className="flex items-center gap-3 cursor-pointer hover:brightness-80"
-             onClick={() => navigateToPage((props?.pageUrl) as any)}>
+             onClick={() => navigateToPage((props.pageUrl as Services))}>
             <img
                 src={props?.pathIcon ?? ''}
                 alt={props.name}
