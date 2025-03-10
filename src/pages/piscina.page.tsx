@@ -46,7 +46,7 @@ export function PiscinaPage() {
                 </div>
 
                 <div className={'col-span-full flex flex-col items-center gap-4'}>
-                    <img src="../../public/assets/images/building.svg" alt=""/>
+                    <img src="../../public/images/building.svg" alt=""/>
                     <h3 className={'text-center'}>Desculpe pelo transtorno, ainda estamos construindo essa parte do
                         site</h3>
                 </div>
@@ -58,7 +58,7 @@ export function PiscinaPage() {
             </footer>
 
             <img
-                src="../../public/assets/icons/whatsapp.svg"
+                src="../../public/icons/whatsapp.svg"
                 alt="whatsapp to contact"
                 className="fixed bottom-4 right-4 w-16 h-16 cursor-pointer"
             />

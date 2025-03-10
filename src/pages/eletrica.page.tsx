@@ -60,9 +60,9 @@ export function EletricaPage() {
                         <h3 className={'text-xl'}>Manutenção</h3>
                         <div className="grid justify-center grid-cols-2 gap-4">
                             <ImageContainer path={'/images/eletric_01.jpeg'}/>
-                            <ImageContainer path={'../public/assets/images/eletric_02.jpeg'}/>
-                            <ImageContainer path={'../public/assets/images/eletric_03.jpeg'}/>
-                            <ImageContainer path={'../public/assets/images/eletric_04.jpeg'}/>
+                            <ImageContainer path={'/images/eletric_02.jpeg'}/>
+                            <ImageContainer path={'/images/eletric_03.jpeg'}/>
+                            <ImageContainer path={'/images/eletric_04.jpeg'}/>
                         </div>
                     </li>
                 </ul>

@@ -60,9 +60,9 @@ export function ImpermeabilizacaoPage() {
                     <li className={'flex flex-col gap-3'}>
                         <h3 className={'text-xl'}>Manta</h3>
                         <div className="grid justify-center grid-cols-2 gap-4">
-                            <ImageContainer path={'../public/assets/images/impermea_primeira_1.jpeg'}/>
-                            <ImageContainer path={'../public/assets/images/impermeb_primeira_2.jpeg'}/>
-                            <ImageContainer path={'../public/assets/images/impermeb_primeira_3.jpeg'}/>
+                            <ImageContainer path={'/images/impermea_primeira_1.jpeg'}/>
+                            <ImageContainer path={'/images/impermeb_primeira_2.jpeg'}/>
+                            <ImageContainer path={'/images/impermeb_primeira_3.jpeg'}/>
                         </div>
                     </li>
 
@@ -70,8 +70,8 @@ export function ImpermeabilizacaoPage() {
                     <li className={'flex flex-col gap-3'}>
                         <h3 className={'text-xl'}>Manta líquida</h3>
                         <div className="grid justify-center grid-cols-2 gap-4">
-                            <ImageContainer path={'../public/assets/images/impermeab_segundo_1.jpeg'}/>
-                            <ImageContainer path={'../public/assets/images/impermeb_segunda_2.jpeg'}/>
+                            <ImageContainer path={'/images/impermeab_segundo_1.jpeg'}/>
+                            <ImageContainer path={'/images/impermeb_segunda_2.jpeg'}/>
                         </div>
                     </li>
 
@@ -79,14 +79,14 @@ export function ImpermeabilizacaoPage() {
                     <li className={'flex flex-col gap-3'}>
                         <h3 className={'text-xl'}>Manta aluminizada</h3>
                         <div className="grid justify-center grid-cols-2 gap-4">
-                            <ImageContainer path={'../public/assets/images/impermeb_terceira_1.jpeg'}/>
-                            <ImageContainer path={'../public/assets/images/impermeb_terceira_3.jpeg'}/>
-                            <ImageContainer path={'../public/assets/images/impermeb_quartar_1.jpeg'}/>
-                            <ImageContainer path={'../public/assets/images/impermeb_quarta_2.jpeg'}/>
-                            <ImageContainer path={'../public/assets/images/impermeb_quarta_3.jpeg'}/>
-                            <ImageContainer path={'../public/assets/images/impermeb_sete_1.jpeg'}/>
-                            <ImageContainer path={'../public/assets/images/impermeb_sete_2.jpeg'}/>
-                            <ImageContainer path={'../public/assets/images/impermeb_sete_3.jpeg'}/>
+                            <ImageContainer path={'/images/impermeb_terceira_1.jpeg'}/>
+                            <ImageContainer path={'/images/impermeb_terceira_3.jpeg'}/>
+                            <ImageContainer path={'/images/impermeb_quartar_1.jpeg'}/>
+                            <ImageContainer path={'/images/impermeb_quarta_2.jpeg'}/>
+                            <ImageContainer path={'/images/impermeb_quarta_3.jpeg'}/>
+                            <ImageContainer path={'/images/impermeb_sete_1.jpeg'}/>
+                            <ImageContainer path={'/images/impermeb_sete_2.jpeg'}/>
+                            <ImageContainer path={'/images/impermeb_sete_3.jpeg'}/>
                         </div>
                     </li>
 
@@ -94,8 +94,8 @@ export function ImpermeabilizacaoPage() {
                     <li className={'flex flex-col gap-3'}>
                         <h3 className={'text-xl'}>Manta bidim</h3>
                         <div className="grid justify-center grid-cols-2 gap-4">
-                            <ImageContainer path={'../public/assets/images/impermeb_quinta_1.jpeg'}/>
-                            <ImageContainer path={'../public/assets/images/impermeb_quinta_2.jpeg'}/>
+                            <ImageContainer path={'/images/impermeb_quinta_1.jpeg'}/>
+                            <ImageContainer path={'/images/impermeb_quinta_2.jpeg'}/>
                         </div>
                     </li>
 
@@ -103,9 +103,9 @@ export function ImpermeabilizacaoPage() {
                     <li className={'flex flex-col gap-3'}>
                         <h3 className={'text-xl'}>Manta adesiva</h3>
                         <div className="grid justify-center grid-cols-2 gap-4">
-                            <ImageContainer path={'../public/assets/images/impermeb_sexta_1.jpeg'}/>
-                            <ImageContainer path={'../public/assets/images/impermeb_sexta_2.jpeg'}/>
-                            <ImageContainer path={'../public/assets/images/impermeb_sexta_3.jpeg'}/>
+                            <ImageContainer path={'/images/impermeb_sexta_1.jpeg'}/>
+                            <ImageContainer path={'/images/impermeb_sexta_2.jpeg'}/>
+                            <ImageContainer path={'/images/impermeb_sexta_3.jpeg'}/>
                         </div>
                     </li>
                 </ul>

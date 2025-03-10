@@ -10,7 +10,7 @@ export function NotFound() {
 
     return (
         <div className={'h-dvh flex flex-col items-center justify-center'}>
-            <img src="../../public/assets/icons/not-found.svg" alt="not-found"/>
+            <img src="../../public/icons/not-found.svg" alt="not-found"/>
             <div className={'flex flex-col md:flex-row justify-center items-center gap-4'}>
                 <span className={'text-center'}>Desculpe a página que você tentou acessar não foi econtrada.</span>
                 <Button variant={'secondary'} onClick={navigateToHome}>Voltar para home</Button>

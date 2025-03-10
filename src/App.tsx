@@ -33,7 +33,7 @@ export function App() {
                 className="gap-10 col-start-2 lg:col-start-4 col-end-12 sm:col-end-8 md:col-end-12 lg:col-end-10 grid grid-cols-8 md:grid-cols-12 lg:grid-cols-12">
                 {/* logo image */}
                 <div className="col-span-full flex justify-center">
-                    <img src="../public/assets/logo-wl-construction.svg" alt="logo-wl-construction"/>
+                    <img src="../public/logo-wl-construction.svg" alt="logo-wl-construction"/>
                 </div>
 
                 {/* presentation container */}
@@ -71,12 +71,12 @@ export function App() {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <Service
                             name="Impermeabilização"
-                            pathIcon="../public/assets/icons/impermeabilizacao.svg"
+                            pathIcon="/icons/impermeabilizacao.svg"
                             pageUrl={Services.impermeabilizacao}
                         />
                         <Service
                             name="Elétrica"
-                            pathIcon={'../public/assets/icons/eletrica.svg'}
+                            pathIcon={'/icons/eletrica.svg'}
                             pageUrl={Services.eletrica}
                         />
                     </div>
@@ -85,10 +85,10 @@ export function App() {
                 {/* images-presentation */}
                 <div className={'col-span-9 md:col-span-full flex justify-center items-center h-full'}>
                     <div className="grid justify-center grid-cols-2 gap-4">
-                        <ImageContainer path={'../public/assets/images/mainpage_1.jpeg'}/>
-                        <ImageContainer path={'../public/assets/images/mainpage_2.jpeg'}/>
-                        <ImageContainer path={'../public/assets/images/mainpage_3.jpeg'}/>
-                        <ImageContainer path={'../public/assets/images/mainpage_4.jpeg'}/>
+                        <ImageContainer path={'/images/mainpage_1.jpeg'}/>
+                        <ImageContainer path={'/images/mainpage_2.jpeg'}/>
+                        <ImageContainer path={'/images/mainpage_3.jpeg'}/>
+                        <ImageContainer path={'/images/mainpage_4.jpeg'}/>
                     </div>
                 </div>
 
