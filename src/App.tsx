@@ -48,7 +48,7 @@ export function App() {
                 </div>
 
                 {/* Contact button */}
-                <div className="col-span-full flex justify-center">
+                <div className="col-span-9 w-full flex justify-center">
                     <Button
                         onClick={() => redirectToWhatsapp()}
                     >
@@ -127,7 +127,7 @@ export function App() {
                 </div>
 
                 {/* Contact button */}
-                <div className="col-span-full flex justify-center">
+                <div className="col-span-9 flex justify-center">
                     <Button
                         onClick={() => redirectToWhatsapp()}
                     >
