@@ -33,7 +33,7 @@ export function App() {
                 className="gap-10 col-start-2 lg:col-start-4 col-end-12 sm:col-end-8 md:col-end-12 lg:col-end-10 grid grid-cols-8 md:grid-cols-12 lg:grid-cols-12">
                 {/* logo image */}
                 <div className="col-span-full flex justify-center">
-                    <img src="../public/logo-wl-construction.svg" alt="logo-wl-construction"/>
+                    <img src="/logo-wl-construction.svg" alt="logo-wl-construction"/>
                 </div>
 
                 {/* presentation container */}
