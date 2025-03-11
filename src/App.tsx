@@ -32,7 +32,7 @@ export function App() {
             <main
                 className="gap-10 col-start-2 lg:col-start-4 col-end-12 sm:col-end-8 md:col-end-12 lg:col-end-10 grid grid-cols-8 md:grid-cols-12 lg:grid-cols-12">
                 {/* logo image */}
-                <div className="col-span-9 flex justify-center">
+                <div className="col-span-9 md:col-span-full flex justify-center">
                     <img src="/logo-with-name-construction.svg" alt="logo-wl-construction"/>
                 </div>
 
@@ -48,7 +48,7 @@ export function App() {
                 </div>
 
                 {/* Contact button */}
-                <div className="col-span-9 w-full flex justify-center">
+                <div className="col-span-9 md:col-span-full w-full flex justify-center">
                     <Button
                         onClick={() => redirectToWhatsapp()}
                     >
@@ -127,7 +127,7 @@ export function App() {
                 </div>
 
                 {/* Contact button */}
-                <div className="col-span-9 flex justify-center">
+                <div className="col-span-9 md:col-span-full flex justify-center">
                     <Button
                         onClick={() => redirectToWhatsapp()}
                     >
