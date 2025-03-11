@@ -16,18 +16,24 @@ export function ImpermeabilizacaoPage() {
 
     return (
         <div
-            className="grid grid-cols-12 sm:grid-cols-8 md:grid-cols-12 lg:grid-cols-12">
+            className="grid grid-cols-12 sm:grid-cols-8 md:grid-cols-12 lg:grid-cols-12"
+        >
+            <img
+                src="/logo-wl-construction.svg"
+                alt="logo-wl"
+                className="opacity-20 fixed left-20 -z-10 top-5"
+            />
+
             {/* header content */}
             <header
                 className="flex items-center justify-between col-start-2 col-end-12 sm:col-end-8 md:col-end-12 lg:col-start-4 lg:col-end-10 py-4 h-fit">
                 <span className="text-nowrap font-semibold">Wl construções</span>
                 <span
-                    className="hidden sm:block whitespace-nowrap font-semibold cursor-pointer"
+                    className="hidden sm:block whitespace-nowrap font-semibold"
                     onClick={() => redirectToWhatsapp({message: whatsappMessage})}
-                >
-                    Entre em contato conosco</span>
+                >Entre em contato conosco</span>
                 <Button
-                    className={'sm:hidden w-fit'}
+                    className={'sm:hidden w-fit bg-red'}
                     variant={'link'}
                     onClick={navigateToHome}>
                     <ArrowLeft/> Voltar
