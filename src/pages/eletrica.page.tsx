@@ -75,8 +75,7 @@ export function EletricaPage() {
             </main>
 
             <footer className="col-start-2 lg:col-start-4 col-end-12 md:col-end-12 lg:col-end-10 border-t-2 mt-8">
-                <span
-                    className="text-sm">Copyright 2025 - WL construções - Developed by: Anderson Andrade</span>
+                <span className="text-[12px]">Copyright 2025 - WL construções - Developed by: Anderson Andrade</span>
             </footer>
 
             <Whatsapp message={whatsappMessage}/>
