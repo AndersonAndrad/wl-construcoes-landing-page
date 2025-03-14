@@ -39,7 +39,7 @@ export function App() {
                 {/* presentation container */}
                 <div className="col-span-9">
                     <h1 className="text-2xl md:text-1xl font-semibold">
-                        WL: A escolha ideal para soluções completas, do início ao fim da sua obra
+                        WL: A escolha ideal é solução definitiva de impermeabilização para sua obra
                     </h1>
                     <h6 className="text-md md:text-1xl">
                         Acompanhamento completo para sua obra, desde ferragens e elétrica até alvenaria, pisos e
